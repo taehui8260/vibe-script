@@ -1,4 +1,4 @@
-package com.taehui.vibescribe.user;
+package com.taehui.vibescribe.integration.user;
 
 import com.taehui.vibescribe.entity.User;
 import com.taehui.vibescribe.repository.UserJpaRepository;
@@ -25,7 +25,7 @@ public class UserServiceTest {
         User savedUser = userRepository.save(user);
 
         //assertThat(savedUser.getId()).isNotNull();
-        assertThat(savedUser.getUsername()).isEqualTo("testuser");
-        assertThat(savedUser.getPass()).isEqualTo("testuser@example.com");
+        assertThat(savedUser.getUsername()).isEqualTo("test01");
+        assertThat(savedUser.getPass()).isEqualTo("test01pass");
     }
 }
